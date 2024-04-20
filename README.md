@@ -7,6 +7,8 @@
     <img src="https://img.shields.io/github/last-commit/stefansphtr/KMeans-Iris-Exercise" alt="Last Commit Badge">
     <img src="https://img.shields.io/github/commit-activity/m/stefansphtr/KMeans-Iris-Exercise" alt="Commit Activity Badge">
     <img src="https://img.shields.io/github/repo-size/stefansphtr/KMeans-Iris-Exercise" alt="Repo Size Badge">
+    <img src="https://www.codefactor.io/repository/github/stefansphtr/KMeans-Iris-Exercise/badge" alt="CodeFactor" />
+    <img src="https://img.shields.io/badge/scikit--learn-1.4.1-F7931E?logo=scikit-learn" alt="scikit-learn Badge">
   </a>
 </p>
 
