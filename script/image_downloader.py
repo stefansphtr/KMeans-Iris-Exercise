@@ -41,7 +41,7 @@ def main():
     """
     The main function that triggers the image download.
     """
-    image_url = "https://www.researchgate.net/profile/Maad-Mijwil/publication/349634676/figure/fig2/AS:995453013336067@1614345901799/Three-classes-of-IRIS-dataset-for-classification-17.jpg"
+    image_url = input("Please enter the URL of the image you want to download: ")
     target_directory = os.path.join("src", "images")
 
     download_image(image_url, target_directory)
