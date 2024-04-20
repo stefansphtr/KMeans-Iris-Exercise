@@ -1,3 +1,15 @@
+<p align="center">
+  <a href="#">
+    <img src="https://badges.pufler.dev/visits/stefansphtr/KMeans-Iris-Exercise" alt="Visits Badge">
+    <img src="https://badges.pufler.dev/updated/stefansphtr/KMeans-Iris-Exercise" alt="Updated Badge">
+    <img src="https://badges.pufler.dev/created/stefansphtr/KMeans-Iris-Exercise" alt="Created Badge">
+    <img src="https://img.shields.io/github/contributors/stefansphtr/KMeans-Iris-Exercise" alt="Contributors Badge">
+    <img src="https://img.shields.io/github/last-commit/stefansphtr/KMeans-Iris-Exercise" alt="Last Commit Badge">
+    <img src="https://img.shields.io/github/commit-activity/m/stefansphtr/KMeans-Iris-Exercise" alt="Commit Activity Badge">
+    <img src="https://img.shields.io/github/repo-size/stefansphtr/KMeans-Iris-Exercise" alt="Repo Size Badge">
+  </a>
+</p>
+
 # K-Means Clustering on Iris Dataset: An Analysis
 
 ![Image_Machine_with_data](https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/f5384ba2-bf78-4be4-94be-4559c1827245)
