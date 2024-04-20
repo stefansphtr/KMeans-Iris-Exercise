@@ -109,3 +109,65 @@ def assign_to_nearest_centroid(
     # Find the index of the nearest centroid
     nearest_centroid_index = np.argmin(distances_to_centroids)
     return nearest_centroid_index
+
+
+def plot_clusters(
+    sepal_dimensions: np.ndarray,
+    centroids: np.ndarray,
+    cluster_labels: np.ndarray,
+    k: int,
+) -> None:
+    """Plot the clusters and centroids.
+    Args:
+    sepal_dimensions (np.array): The sepal dimensions of the samples.
+    centroids (np.array): The centroids of the clusters.
+    cluster_labels (np.array): The labels of the clusters for each sample.
+    k (int): The number of clusters.
+    """
+    # Define colors for each cluster
+    cluster_colors = ["red", "green", "blue"]
+    # Create a figure and axis for the plot
+    fig, ax = plt.subplots()
+    # Plot each cluster
+    for centroid_index in range(k):
+        # Gather points assigned to the current centroid
+        points_in_cluster = np.array(
+            [
+                sepal_dimensions[j]
+                for j in range(len(sepal_dimensions))
+                if cluster_labels[j] == centroid_index
+            ]
+        )
+
+        # Plot points in the current cluster
+        ax.scatter(
+            points_in_cluster[:, 0],
+            points_in_cluster[:, 1],
+            c=cluster_colors[centroid_index],
+            alpha=0.5,
+            label=f"Cluster {centroid_index+1}",
+        )
+    # Plot centroids
+    ax.scatter(
+        centroids[:, 0],
+        centroids[:, 1],
+        marker="D",
+        s=150,
+        color="#1f77b4",
+        label="Centroids",
+    )
+    # Remove the top and right spines
+    ax.spines["right"].set_visible(False)
+    ax.spines["top"].set_visible(False)
+    # Only show ticks on the left and bottom spines
+    ax.yaxis.set_ticks_position("left")
+    ax.xaxis.set_ticks_position("bottom")
+    # Label axes
+    ax.set_xlabel("Sepal length (cm)")
+    ax.set_ylabel("Sepal width (cm)")
+    # Add a title
+    ax.set_title("K-Means Clustering of Iris Dataset (Sepal Dimensions)")
+    # Add a legend
+    ax.legend()
+    # Display plot
+    plt.show()
